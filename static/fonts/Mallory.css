@@ -1,0 +1,5 @@
+  @font-face {
+        font-family: 'Mallory';
+        font-display: block;
+        src: local('Mallory'), local('Mallory-Ultra'),local('MalloryUltra'), local('Mallory Ultra'), url(Mallory-Ultra.ttf);
+    }
