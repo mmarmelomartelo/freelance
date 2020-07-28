@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from tonsser.com/en/terms by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jul 2020 22:46:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"b9ddab3dd5","applicationID":"84943917","transactionName":"IFwPFREKX10BEBhbVg5WThUGF15C","queueTime":0,"applicationTime":4,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"b9ddab3dd5",applicationID:"84943917"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1169.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+  <title>Terms of Service | Tonsser</title>
+  <link rel="stylesheet" media="all" href="../assets/terms-b1b0bfd358c7f3ad1ae492bdc7888f0df0779d8ef6afb42f3346afd48899ef80.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+</head>
+<body>
+<div class="header">Tonsser - Terms of Service</div>
+<pre>
+User and Partner Terms of Service
+
+By using the Tonsser Service, the User or Partner agrees to these Terms of Service. Please read the following Terms of Service carefully before using the Tonsser Service. If you do not agree with the Terms of Service, please do not use the Tonsser Service. These Terms of Service apply to any use of the Tonsser Service and to the Agreements between a Partner and the User. A more detailed description of the Tonsser Service and information on system requirements is available at tonsser.com. If you register as a company, association or any other legal entity, you represent and warrant that you are authorised to bind the entity into these Terms of Service.
+
+1. Definitions
+
+“Partner” means a club, brand, or similar body who has entered into an agreement with Tonsser and who offers its content, experiences, and brand affiliation to benefit Players, Coaches or the football landscape through the Tonsser Service.
+
+“Partner Representative” means any natural or legal entity that is legally obliged to represent the Partner when entering into agreements.
+
+“Club” means a football body consisting of various teams that play in recognised leagues, that is able to form a partnership with Tonsser.
+
+“Tonsser” means Tonsser ApS Godthåbsvej 34 B, 2nd 2000 Copenhagen company ID 35472088 for Users registered in any location.
+
+“Tonsser App” means any digital application called Tonsser provided by Tonsser for natural and legal persons to create a football profile or presence by uploading content, results, and performance inputs either as a User or Partner.
+
+“Tonsser Service” means both Tonsser App and Tonsser website tonsser.com and other additional locations as mentioned at tonsser.com
+
+“User” means a natural or legal person using the Tonsser Service, as either a player, coach, club, scout, or similar entity.
+
+“User Content” anything posted by a User or made available through the Tonsser Service by the User.
+
+2. Description and Purpose of the Tonsser Service
+
+2.1. Tonsser acts as an intermediary between the User and the Partners and provides a platform on which the User can upload performance results, content, and feedback as well as interact with the community of Users and Partners.
+
+2.2 In exchange, the Partners provide information about exclusive offers, news, content, special events, trial and scouting opportunities through the Tonsser Service.
+
+2.3 A User may create a profile as either a player, a coach, or a scout depending on their involvement in football into which they will then input relevant data.
+
+2.4 The objective of providing Tonsser with this data is to help Users to track, and progress through their football career or the career of others. The data provided by Users is used by Tonsser to analyse the youth football industry as a whole, and to connect Users with football opportunities which may best apply to them. This can include, but is not limited to, Partner collaborations, detection events, training, deep learning, or special events.
+
+3. User Accounts
+
+3.1 In order to use the Tonsser Service, the User must create a user account by following the registration instructions in the Tonsser Service. The Tonsser Service credentials are personal. The User shall ensure that any user account credentials and equivalent information required to access the user account of the User are kept confidential and used in a secure manner not accessible by third parties. A User can have only one user account.
+
+3.2 Where it is suspected that any unauthorised person has become aware of a User’s user account credentials or has access to the user account of the User, the User shall immediately inform Tonsser thereof. The User shall be responsible for any use of the Tonsser Service and any activity under the user account of the User.
+
+3.3 In order to use the Tonsser Services, the User must input valid and accurate results and data to the best of their ability. The User agrees to adhere to these rules. The User is responsible to keep their data up to date and accurate, in order to benefit from any profiling, or celebration from Partners or from Tonsser.
+
+3.5 Should a User not adhere to these terms of use, Tonsser may use its discretion to remove that account. If a User selects an identifier for their account or team page Tonsser reserves the right to edit, remove or reclaim it, if we believe it is inappropriate (such as a User name or a team name that does not closely relate to a User’s actual name, club or level).
+
+4. Data
+
+4.1 The purpose of utilising the User’s data will be in the spirit of benefitting youth football as a whole, and the User themselves wherever possible.
+
+4.2 Tonsser will request data that is closely linked to 2.4, and will minimise excessive data collection.
+
+4.3 The onus is on the user to ensure that their data is up to date and accurate via their inputs. From this, Tonsser will ensure that information stored will be accurate and up to date too.
+
+4.4 Tonsser shall store the data on Users for an unlimited period of time. This is to monitor progression over time, as well as to follow trends in youth football as a whole. If the User does not agree with this, they may request for their account to be deleted.
+
+4.5 Tonsser will take any reasonable steps to ensure that personal data is kept secure - against both external and internal threats.
+
+4.6 The data provided by Users to the Tonsser service may be accessed directly by third party providers. This data will not be made anonymous, and may be hosted on a third party provider’s server.
+
+4.7 Furthermore, the User may at any period request that for a complete set of their data from Tonsser. In this case, the User should submit the request via email to <a href="../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="afc8cbdfddefdbc0c1dcdccadd81ccc0c281">[email&#160;protected]</a> The company will provide the data to the user in a reasonable time period.
+
+5. Partner Accounts
+
+5.1 In order to use the Tonsser Service, the applicable Partner Representative must accept the terms of use on behalf of the Partner. By accepting these terms of use, the Partner Representative accepts on behalf of the Partner itself. The Partner is then bound by the agreement.
+
+5.2 Upon agreeing to the terms of use, the Partner shall be required to activate their community of influencers, players, coaches, and other entities and encourage them to join the Tonsser Service.
+
+5.3 Once the agreed upon community is present on Tonsser, the Partner will then receive various benefits from Tonsser, including but not limited to an official Partner page on the Tonsser Service, data on the community’s performance, a personal account manager, co-hosting event opportunities, as well as access to Tonsser’s scouting team and resources.
+
+6. Recognising Talent
+
+6.1 By using the Tonsser Services, the User agrees for their information to be shared with applicable Partners in order to be profiled, sponsored, scouted, or to receive special offers or opportunities.
+
+6.2 With this agreement, the User also accepts that the Tonsser Service is only able to highlight players or coaches on which Tonsser has specific data. This means that the onus is on the User to ensure that their profile is up to date and correct.
+
+6.3 The opportunities created in order to highlight talent are at Tonsser’s complete discretion. Tonsser may take into account the User’s data, social following, content, coach feedback, or any other measure in order to rate talent.
+
+6.4 Tonsser has developed its own algorithms to score talent. These algorithms may be adapted, and developed over time to ensure that this remains an accurate measure of talent.
+
+7. User Generated Content
+
+7.1 Users may post, save, upload and/or contribute (“post”) content to the Tonsser Service, including pictures, text and results (goals, assists, substitutions, cards or similar inputs).
+
+7.2 Users retain all rights in, and are solely responsible for, the User Content posted on Tonsser.
+
+7.3 Upon posting User Content on Tonsser, the Tonsser Service is granted a non-exclusive, transferable, sub-licensable, royalty-free, worldwide license to use any User Content that you post on or in connection to Tonsser.
+
+7.4 This license is applicable for the User’s period of having a Tonsser account, or deletes User Content. This does not take into account User Content that has been shared by others, including but not limited to Partners, and Tonsser.
+
+7.5 Tonsser and its Partners may retain and continue to use, store, display, reproduce, repost, modify, perform, and distribute any of your User Content that other users have stored or shared through Tonsser. Furthermore, removed content may persist in backup copies for a reasonable period of time (but not available to others).
+
+7.6 Tonsser is not responsible for any User Content nor does it endorse any opinion contained in User Content. We reserve the right to remove and modify User Content for any reason including User Content that we believe violates these Terms.
+
+7.7 Tonsser values feedback from Users and Partners, and we are always interested in learning how to improve and make Tonsser better. If Users or Partners submit comments, ideas or feedback, you understand that we are free to use them without any restriction or compensation. However, we are not obliged to use comments, ideas or feedback, just as you have no obligation to offer them.
+
+7.8 You have sole responsibility for the accuracy, quality, integrity, legality, reliability, appropriateness, and intellectual property ownership or right to use any and all uploaded data that you submit. Tonsser shall not be responsible or liable for the deletion, correction, destruction, damage, loss or failure to store any uploaded data. Tonsser may try to restore lost data, however we do not make any warranty to recovering or restoring lost data.
+
+7.9 There is no tolerance for objectionable content or abusive users. If a user is found to act in this manner, their account will be suspended with immediate effect.
+
+8. Intellectual Property Rights
+
+8.1 All Intellectual Property Rights in or related to the Tonsser Service and thereto related documentation and all parts and copies thereof shall remain exclusively vested with and be the sole and exclusive property of Tonsser and/or its subcontractors/licensors. “Intellectual Property Rights” shall mean copyrights and related rights (including database and catalogue rights and photography rights), patents, utility models, design rights, trademarks, trade names, trade secrets, know-how and any other form of registered or unregistered intellectual property rights.
+
+8.2 These Terms of Service do not grant the User any Intellectual Property Rights in the Tonsser Service and all rights not expressly granted hereunder are reserved by Tonsser and its subcontractors/licensors.
+
+9. Additional Provisions for use of the Tonsser Service
+
+9.1 The Tonsser Service is only available to persons of the age of 13 years or older.
+
+9.2 The User or Partner shall observe all applicable rules and regulations when using the Tonsser Service, including the creation or adaption of content.
+
+9.3 We are constantly developing the Tonsser Service and we may change or remove different parts of the Tonsser Service, including features, the products and Partners available in the Tonsser Service in part or in whole.
+
+9.4. By using the Tonsser Service, the User or Partner may encounter content or information that might be inaccurate, incomplete, delayed, misleading, illegal, offensive or otherwise harmful. Tonsser does attempt to review any content provided by the Partners. Tonsser is not responsible for third parties' (including the Partners') content or information or for any damages arising as a result of the use of or reliance on it.
+
+9.5 Users and Partners shall be responsible for obtaining and maintaining any devices or equipment (such as mobile phones) and connections needed for access to and use of the Tonsser Service and all charges related thereto.
+
+9.6 The User or Partner will not:
+
+(i) use or attempt to use another person’s Tonsser account and/or access another person’s performance data on the Tonsser Service or use another person’s input data when using the Tonsser Service, without consent of that other person;
+
+(ii) copy, modify or create derivative works of the Tonsser Service or any related technology;
+
+(iii) reverse engineer, decompile, disassemble, decipher or otherwise attempt to derive the source code for the Tonsser Services or any related technology, or any part thereof;
+
+(iv) remove any copyright, trademark or other proprietary rights notices contained in or on the Tonsser Service;
+
+(iv) remove, cover or obscure any advertisement included on the Tonsser Service;
+
+(v) collect, use, copy, or transfer any information obtained from the Tonsser Service without the consent of Tonsser;
+
+(vi) use bots or other automated methods to use the Tonsser Service;
+
+(vii) create a Tonsser account using a fake identity or an identity of another person; and
+
+(viii) access the Tonsser Service except through the interfaces expressly provided by Tonsser, such as the Tonsser App and Tonsser Website.
+
+9.7 Tonsser shall process any personal data collected from the User in accordance with the Tonsser Privacy Statement
+
+10. Term and termination
+
+10.1 These Terms of Service are in force as a binding agreement until further notice as long as the User or Partner are using the Tonsser Service.
+
+10.2 The User or Partner can discontinue the use of the Tonsser Service at any time. Tonsser can discontinue providing the Tonsser Service permanently or temporarily at any time.
+
+11. Limitation of Liability
+
+The following section is only applicable to non-consumer Users of the Tonsser Service. Under no circumstances shall Tonsser be liable to the User for any indirect damages, including lost profits, lost sales or business, lost data or business interruption, or for any direct damages as a result of third party agreements between Users and Partners.
+
+12. Complaints
+
+12.1 Please note that the Tonsser Service may at any time be interrupted or permanently discontinued. The Tonsser Service may also be temporarily suspended. Do not use the Tonsser Services for backing up any data.
+
+12.2 The Partner is solely liable for any misuse of data on behalf of their members, based on their agreement.
+
+13. Applicable Law, Dispute Resolution, and Governing Language
+
+13.1 These Terms of Service shall be governed by and shall be construed in accordance with the laws of Denmark. If you are a consumer domiciled in the EU, please note that you cannot be deprived of the rights granted to you by the mandatory consumer protection laws of your country of domicile. Disputes arising from these Terms of Service shall be resolved by the district court of Copenhagen. A consumer may always institute proceedings in the district court of its domicile. Parties may also use the ODR platform managed by the European Commission to settle their disputes. This platform can be found on http://ec.europa.eu/odr .
+
+13.2 When interpreting these terms, the English version will be seen as decisive and binding.
+
+14. Amendments
+
+14.1 These Tonsser Terms of Service are subject to amendments.
+
+14.2 Tonsser shall publish the amended Tonsser Terms of Service at the Tonsser Website and shall inform the User and Partners that the Tonsser Terms of Service have been amended on the Tonsser Service or by email to the email address submitted to the Tonsser Service by the User or by the Partner. If the User or Partner does not agree to any amended Tonsser Terms of Service, this entity, natural or legal, shall discontinue the use of the Tonsser Service.
+
+15. Assignment
+
+15.1 Tonsser shall be entitled to assign all or any of its rights or obligations hereunder in whole or part to an affiliate or successor or to a purchaser or acquirer of its business assets relating to Tonsser Service without the User or Partner’s prior consent.
+
+15.2 The User or Partner shall not be entitled to assign any of its rights or obligations hereunder in whole or part.
+
+Updated 28.05.2018
+</pre>
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+
+<!-- Mirrored from tonsser.com/en/terms by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jul 2020 22:46:04 GMT -->
+</html>
